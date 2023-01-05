@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+	width: 0;
+}
+.form_button_buy{
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: purple;
+}
+button{
+	cursor: pointer;
+}
+.form_button_buy button{
+	width: 30vh;
+	height: 10vh;
+	font-size: 30px;
+	border-radius: 10px;
+	border: 1px solid silver;
+	box-shadow: 1px 1px 2px 1px silver;
+	background-color: rgba(0, 255, 0);
+	color: #ffffff;
+}
+content{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: purple;
+}
+.form_confirm{
+	width: 90vh;
+	height: 70vh;
+	border: 1px solid purple;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffffff;
+}
+.line_input{
+	width: 90%;
+	height: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.line_input > input{
+	width: 100%;
+	height: 10vh;
+	padding-left: 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+}
+.confirm{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.confirm button{
+	width: 30%;
+	height: 5vh;
+	border: 1px solid silver;
+	border-radius: 10px;
+}
+.confirm button:hover{
+	animation: animate 5s linear 1s infinite;
+	/*color: #ffffff;*/
+}
+@keyframes animate{
+	0%{
+		/*border-top: 1px solid purple;*/
+	}
+	25%{
+		border-right: 1px solid purple;
+	}
+	50%{
+		border-bottom: 1px solid purple;
+	}
+	75%{
+		border-left: 1px solid purple;
+	}
+	100%{
+		border: 1px solid purple;
+	}
+}
